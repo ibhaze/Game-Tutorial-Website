@@ -57,6 +57,18 @@ aside>ul{
 /*Making the colour of the text About Us white*/
 aside a{
   color: white;
+  padding-right: 7vw;
+}
+
+/* removing the padding for bigger words */
+aside a.remove-padding{
+padding-right: 0;
+}
+
+/* making the selcted page orange */
+ul li.selected{
+  padding-right: 5vw;
+  background: linear-gradient(to right, rgb(248, 148, 28) 65%, rgb(0, 0, 0, 0.0));
 }
 
 /*Styling the About Us link*/
@@ -66,12 +78,15 @@ aside>a{
   left: 1vw;
   font-size: 40px;
   font-family: var(--pricedow);
+  padding-right: 7vw;
+  background: linear-gradient(to right, rgb(250, 137, 0) 65%, rgb(0, 0, 0, 0.0));
 }
 
 /* Styling for hovered link */
 aside a:hover {
   background-color: #F8941C; 
   color: #ffffff; 
-  padding-right: 7vw;
   background: linear-gradient(to right, rgb(248, 148, 28) 65%, rgb(0, 0, 0, 0.0));
 }
+
+
