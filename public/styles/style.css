@@ -5,10 +5,17 @@
     url('../fonts/pricedow.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'InriaSans';
+  src: url("../fonts/InriaSans.woff") format('woff'),
+  url('../fonts/InriaSans.woff2') format('woff2');
+}
+
 /* Root */
 :root{
   --black: #000;
   --pricedow: 'pricedow';
+  --Inriasans: 'InriaSans';
 }
 
 /* general styling */
@@ -17,6 +24,7 @@
   list-style: none;
 }
 
+/*Giving the body the background picture*/
 body{
   margin: 0;
   padding: 0;
@@ -36,21 +44,34 @@ aside{
   padding: 13vh 2vw 0 2vw;
   color: white;
   font-size: 24px;
+  font-family: var(--Inriasans);
   line-height: 5vh;
   background: linear-gradient(to right, rgba(0, 0, 0) 65%, rgb(0, 0, 0, 0.0));
 }
 
+/*Moving the list to the left*/
 aside>ul{
   padding: 0vw;
 }
 
+/*Making the colour of the text About Us white*/
 aside a{
   color: white;
 }
 
+/*Styling the About Us link*/
 aside>a{
   position: absolute;
   top: 85vh;
+  left: 1vw;
+  font-size: 40px;
   font-family: var(--pricedow);
 }
 
+/* Styling for hovered link */
+aside a:hover {
+  background-color: #F8941C; 
+  color: #ffffff; 
+  padding-right: 7vw;
+  background: linear-gradient(to right, rgb(248, 148, 28) 65%, rgb(0, 0, 0, 0.0));
+}
