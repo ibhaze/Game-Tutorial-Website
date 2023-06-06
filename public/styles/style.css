@@ -78,8 +78,6 @@ aside>a{
   left: 1vw;
   font-size: 40px;
   font-family: var(--pricedow);
-  padding-right: 7vw;
-  background: linear-gradient(to right, rgb(250, 137, 0) 65%, rgb(0, 0, 0, 0.0));
 }
 
 /* Styling for hovered link */
