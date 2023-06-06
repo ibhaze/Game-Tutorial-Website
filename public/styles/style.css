@@ -1,13 +1,14 @@
 /* Fonts */
 @font-face {
-  font-family: 'BebasNeue-Regular';
-  src: url('/fonts/BebasNeue-Regular.woff') format('woff'),
-  url('/fonts/BebasNeue-Regular.woff2') format('woff2');
+    font-family: 'pricedow';
+    src: url("../fonts/pricedow.woff") format('woff'),
+    url('../fonts/pricedow.woff2') format('woff2');
 }
 
 /* Root */
 :root{
-  --black: #000
+  --black: #000;
+  --pricedow: 'pricedow';
 }
 
 /* general styling */
@@ -50,5 +51,6 @@ aside a{
 aside>a{
   position: absolute;
   top: 85vh;
+  font-family: var(--pricedow);
 }
 
