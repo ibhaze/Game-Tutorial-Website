@@ -69,6 +69,7 @@ main nav{
   background-color: black;
   position: relative;
   top: -4px;
+  font-family: var(--InriaSans);
 }
 
 main nav ul{
@@ -87,4 +88,13 @@ main nav ul li a{
 
 ul li.selected{
   background-color: orange;
+}
+
+/* Tutorials */
+main article{
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
 }
