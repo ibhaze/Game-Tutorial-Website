@@ -1,4 +1,9 @@
 /* Fonts */
+@font-face {
+  font-family: 'BebasNeue-Regular';
+  src: url('/fonts/BebasNeue-Regular.woff') format('woff'),
+  url('/fonts/BebasNeue-Regular.woff2') format('woff2');
+}
 
 /* Root */
 :root{
@@ -14,6 +19,9 @@
 body{
   margin: 0;
   padding: 0;
+  background-image: url('/public/images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*Styling the sidebar*/
@@ -27,6 +35,12 @@ aside{
   padding: 13vh 2vw 0 2vw;
   color: white;
   font-size: 24px;
+  line-height: 5vh;
+  background: linear-gradient(to right, rgba(0, 0, 0) 65%, rgb(0, 0, 0, 0.0));
+}
+
+aside>ul{
+  padding: 0vw;
 }
 
 aside a{
