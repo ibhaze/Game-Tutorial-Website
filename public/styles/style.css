@@ -1,8 +1,12 @@
 /* Fonts */
-
-/* Root */
+@font-face {
+  font-family: 'pricedow';
+  src: url("../fonts/pricedow.woff") format('woff'),
+  url('../fonts/pricedow.woff2') format('woff2');
+}
+/* Root */ 
 :root{
-  --black: #000
+  --pricedow:'pricedow';
 }
 
 /* general styling */
@@ -22,6 +26,7 @@ h1 {
   margin: 0; 
   color: #fff; /* This Sets the text color to white */
   font-size:60px;/*This changes the font size */
+  font-family: var(--pricedow);
 }
 
 /*this styling is for the body */
@@ -29,7 +34,7 @@ body{
   margin: 0;
   padding: 0;
   background-image: url(../images/backgroundaboutpage.jpg);/*this is the link to the backgroud image */
-  background-size:cover;/*this makes the background image cover the whole page */
+  background-size:cover;/*this makes the background image cover the whole page */ 
 }
 
 
