@@ -15,3 +15,24 @@ body{
   margin: 0;
   padding: 0;
 }
+
+/* This code is so the body starts under the header and next to the sidebar */
+.body{
+  margin: 18vh 0 0 15vw;
+}
+
+/* this is to have a background picture and darken it */
+.bg-GAME{
+  background-color: aqua;
+  z-index: -2;
+}
+
+.darken{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
