@@ -1,41 +1,69 @@
 /* Fonts */
 @font-face {
   font-family: 'pricedow';
+  /* Specify the font files for 'pricedow' */
   src: url("../fonts/pricedow.woff") format('woff'),
   url('../fonts/pricedow.woff2') format('woff2');
 }
-/* Root */ 
-:root{
-  --pricedow:'pricedow';
+
+/* Root */
+:root {
+  --pricedow: 'pricedow';
 }
 
-/* general styling */
-*{
+/* General styling */
+* {
   text-decoration: none;
   list-style: none;
 }
-/*This styling is for the header*/
+
+/* Header styling */
 header {
-  padding: 20px; 
-  margin: 0; /* this Removes any default margin */
+  padding: 20px;
+  margin: 0;
   text-align: center;
- 
+  /* I basically align the content in the header */
 }
 
 h1 {
-  margin: 0; 
-  color: #fff; /* This Sets the text color to white */
-  font-size:60px;/*This changes the font size */
+  margin: 0;
+  color: #fff;
+  font-size: 60px;
   font-family: var(--pricedow);
+  /* Here I set the text color to white,I specify the font size i want and the font family for h1 */
 }
 
-/*this styling is for the body */
-body{
+/* Body styling */
+body {
   margin: 0;
   padding: 0;
-  background:rgba(0,0,0,0.7) url(../images/backgroundaboutpage.jpg);/*this is the link to the backgroud image */
-  background-size:cover;/*this makes the background image cover the whole page */ 
+  background: rgba(0, 0, 0, 0.7) url(../images/backgroundaboutpage.jpg);
+  background-size: cover;
   background-blend-mode: darken;
+  /*Here ,I set the background  and image, and darken the background image  */
 }
 
+/* Image container styling */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Here I Use a flexbox to horizontally center the image items in the container */
+}
 
+.image-item {
+  margin: 10px;
+  text-align: center;
+  /* here I Add a margin and align the content to the center in each image item */
+}
+
+.image-item img {
+  width: 200px;
+  height: 200px;
+  /* Here I Set the width and height for the images within the image items , without this the images would  be huge  */
+}
+
+.image-item p {
+  color: #fff;
+  /* here i Set the text color to white for the paragraphs within the image items */
+}
