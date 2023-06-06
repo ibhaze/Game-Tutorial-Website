@@ -31,6 +31,10 @@ body{
   display: flex;
 }
 
+.margin-0{
+  margin: 0;
+}
+
 /* This code is so the body starts under the header and next to the sidebar */
 .body{
   margin: 18vh 0 0 15vw;
@@ -46,7 +50,7 @@ body{
 }
 
 .bg-GAME{
-  background: url(../images/bg-GAME.jpg);
+  background: url("../images/bg-GAME.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -105,6 +109,15 @@ main article img{
   padding-right: 1vw;
 }
 
-main article h2, main article h6{
-  margin: 0;
+main article h2{
+  font-size: 2rem
+}
+
+main article h6{
+  font-size: 1rem
+}
+
+main article p{
+  margin: 10px 0 0 0 ;
+  font-size: 1.7em;
 }
