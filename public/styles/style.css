@@ -10,6 +10,19 @@
   text-decoration: none;
   list-style: none;
 }
+/*This styling is for the header*/
+header {
+  padding: 20px; 
+  margin: 0; /* this Removes any default margin */
+  text-align: center;
+}
+
+h1 {
+  margin: 0; 
+  color: #fff; /* This Sets the text color to white */
+  font-size:60px;/*This changes the font size */
+}
+
 /*this styling is for the body */
 body{
   margin: 0;
