@@ -1,8 +1,19 @@
 /* Fonts */
+@font-face {
+  font-family: 'pricedow';
+  src: url("../fonts/pricedow.woff") format('woff'),
+  url("../fonts/pricedow.woff2") format('woff2');
+}
 
+@font-face {
+  font-family: 'InriaSans';
+  src: url("../fonts/InriaSans.woff") format('woff'),
+  url("../fonts/InriaSans.woff2") format('woff2');
+}
 /* Root */
 :root{
-  --black: #000
+  --PriceDow: "pricedow";
+  --InriaSans: "InriaSans";
 }
 
 /* general styling */
@@ -56,6 +67,8 @@ main img.hero{
 main nav{
   width: 100%;
   background-color: black;
+  position: relative;
+  top: -4px;
 }
 
 main nav ul{
