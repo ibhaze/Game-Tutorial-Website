@@ -1,4 +1,14 @@
 /* Fonts */
+@font-face {
+  font-family: 'pricedow';
+  src: 
+       local(‘pricedow’),
+       url('pricedow.woff2') format('woff2'),
+       url('pricedow.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* Root */
 :root{
@@ -16,11 +26,59 @@ body{
   padding: 0;
 }
 
+header{
+  text-align: center;
+  background: rgb(26, 26, 31);
+  top: 0;
+  left: 0;
+  max-width: 100vw;
+  height: 5vh;
+}
+
+/* this is for search bar */
+.searchwrap{
+  margin-top: 7vh;
+  max-width: 100vw; 
+}
+
+.search{
+  display: flex;
+  width: 30%;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+.searchterm{
+  width: 100%;
+  border: 3px solid #000000;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  outline: none;
+  color: #000000;
+}
+
+.searchterm:focus{
+  color: #000000;
+}
+
+.searchbutton{
+  width: 80px;
+  height: 36px;
+  border: 1px solid #000000;
+  background: #F8941C;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
 /* this is for index page */
 .grid{
   display: grid;
   grid-template-columns: repeat(8,1fr);
-  grid-template-rows: repeat(20,minmax(150px,auto));
+  grid-template-rows: repeat(10,minmax(150px,auto));
   
 }
 
