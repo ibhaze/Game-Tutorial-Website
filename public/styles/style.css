@@ -16,23 +16,62 @@ body{
   padding: 0;
 }
 
+.flex{
+  display: flex;
+}
+
 /* This code is so the body starts under the header and next to the sidebar */
 .body{
   margin: 18vh 0 0 15vw;
 }
 
 /* this is to have a background picture and darken it */
-.bg-GAME{
-  background-color: aqua;
-  z-index: -2;
-}
-
-.darken{
+.bg{
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+}
+
+.bg-GAME{
+  background: url(../images/bg-GAME.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -2;
+}
+
+.darken{
   background-color: rgba(0, 0, 0, 0.25);
   z-index: -1;
+}
+
+/* Main body */
+main img.hero{
+  width: 100%;
+}
+
+/* Navigation underneath the hero */
+main nav{
+  width: 100%;
+  background-color: black;
+}
+
+main nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+main nav ul li{
+  padding: 1vh 3vw;
+}
+
+main nav ul li a{
+  color: white;
+  padding: 1vh 3vw;
+}
+
+ul li.selected{
+  background-color: orange;
 }
