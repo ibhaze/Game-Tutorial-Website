@@ -93,8 +93,18 @@ ul li.selected{
 /* Tutorials */
 main article{
   width: 90%;
-  margin: 0 auto;
+  margin: 3vh auto;
+  padding: 10px;
   color: white;
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 10px;
+}
+
+main article img{
+  width: 200px;
+  padding-right: 1vw;
+}
+
+main article h2, main article h6{
+  margin: 0;
 }
