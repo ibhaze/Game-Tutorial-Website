@@ -41,7 +41,7 @@ aside{
   position: fixed;
   top: 0;
   left: 0;
-  padding: 13vh 2vw 0 2vw;
+  padding: 13vh 1vw;
   color: white;
   font-size: 24px;
   font-family: var(--Inriasans);
@@ -86,5 +86,37 @@ aside a:hover {
   color: #ffffff; 
   background: linear-gradient(to right, rgb(248, 148, 28) 65%, rgb(0, 0, 0, 0.0));
 }
+
+/*Styling the Search Bar*/
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 13vh 0vw;
+}
+
+/*White square text-input styling*/
+.search-form input[type="text"] {
+  padding: 0.5vw;
+  font-size: 16px;
+  border: 0.1vw solid #ccc;
+  border-radius: 0;
+}
+
+/*Orange square submit button designing*/
+.search-form button {
+  padding: 2.5vh 2vw;
+  background-color: #f8941c;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+
+
+
+
+
 
 
