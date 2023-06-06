@@ -10,13 +10,12 @@
   text-decoration: none;
   list-style: none;
 }
-
+/*this styling is for the body */
 body{
   margin: 0;
   padding: 0;
-  background-image: url(../images/backgroundaboutpage.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
+  background-image: url(../images/backgroundaboutpage.jpg);/*this is the link to the backgroud image */
+  background-size:cover;/*this makes the background image cover the whole page */
 }
 
 
