@@ -17,19 +17,24 @@ body{
 }
 
 /*Styling the sidebar*/
-.sidebar{
+aside{
   width: 16vw;
   height: 100vh;
   background-color: #000000;
   position: fixed;
-  top: 12vh;
+  top: 0;
   left: 0;
-  padding: 20px;
+  padding: 13vh 2vw 0 2vw;
   color: white;
   font-size: 24px;
 }
 
-.sidebar a{
+aside a{
   color: white;
+}
+
+aside>a{
+  position: absolute;
+  top: 85vh;
 }
 
