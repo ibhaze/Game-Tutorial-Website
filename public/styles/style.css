@@ -1,8 +1,21 @@
 /* Fonts */
+@font-face {
+    font-family: 'pricedow';
+    src: url("../fonts/pricedow.woff") format('woff'),
+    url('../fonts/pricedow.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'InriaSans';
+  src: url("../fonts/InriaSans.woff") format('woff'),
+  url('../fonts/InriaSans.woff2') format('woff2');
+}
 
 /* Root */
 :root{
-  --black: #000
+  --black: #000;
+  --pricedow: 'pricedow';
+  --Inriasans: 'InriaSans';
 }
 
 /* general styling */
@@ -11,7 +24,99 @@
   list-style: none;
 }
 
+/*Giving the body the background picture*/
 body{
   margin: 0;
   padding: 0;
+  background-image: url('/public/images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+/*Styling the sidebar*/
+aside{
+  width: 16vw;
+  height: 100vh;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 13vh 1vw;
+  color: white;
+  font-size: 24px;
+  font-family: var(--Inriasans);
+  line-height: 5vh;
+  background: linear-gradient(to right, rgba(0, 0, 0) 65%, rgb(0, 0, 0, 0.0));
+}
+
+/*Moving the list to the left*/
+aside>ul{
+  padding: 0vw;
+}
+
+/*Making the colour of the text About Us white*/
+aside a{
+  color: white;
+  padding-right: 7vw;
+}
+
+/* removing the padding for bigger words */
+aside a.remove-padding{
+padding-right: 0;
+}
+
+/* making the selcted page orange */
+ul li.selected{
+  padding-right: 5vw;
+  background: linear-gradient(to right, rgb(248, 148, 28) 65%, rgb(0, 0, 0, 0.0));
+}
+
+/*Styling the About Us link*/
+aside>a{
+  position: absolute;
+  top: 85vh;
+  left: 1vw;
+  font-size: 40px;
+  font-family: var(--pricedow);
+}
+
+/* Styling for hovered link */
+aside a:hover {
+  background-color: #F8941C; 
+  color: #ffffff; 
+  background: linear-gradient(to right, rgb(248, 148, 28) 65%, rgb(0, 0, 0, 0.0));
+}
+
+/*Styling the Search Bar*/
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16vh 0vw;
+}
+
+/*White square text-input styling*/
+.search-form input[type="text"] {
+  padding: 0.5vw;
+  font-size: 16px;
+  border: 0.1vw solid #ccc;
+  border-radius: 0;
+}
+
+/*Orange square submit button designing*/
+.search-form button {
+  padding: 2.5vh 2vw;
+  background-color: #f8941c;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
