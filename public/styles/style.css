@@ -117,6 +117,25 @@ aside a:hover {
   cursor: pointer;
 }
 
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  height: 45vh;
+  width: 21vw;
+  background-color: #F8941C;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 35vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: -30vh;
+}
+
+
 /*Position the main content of the page*/
 .body {
   margin: 18vh 0 0 15vw;
