@@ -101,7 +101,7 @@ padding-right: 0;
 }
 
 /* making the selcted page orange */
-ul li.selected{
+aside ul li.selected{
   padding-right: 5vw;
   background: linear-gradient(to right, rgb(248, 148, 28) 65%, rgb(0, 0, 0, 0.0));
 }
@@ -112,7 +112,7 @@ aside>a{
   top: 85vh;
   left: 1vw;
   font-size: 40px;
-  font-family: var(--pricedow);
+  font-family: var(--PriceDow);
 }
 
 /* Styling for hovered link */
@@ -176,7 +176,7 @@ main nav ul li a{
   padding: 1vh 3vw;
 }
 
-ul li.selected{
+nav ul li.selected{
   background-color: orange;
 }
 
