@@ -24,10 +24,14 @@
   list-style: none;
 }
 
-/*Giving the body the background picture*/
+/*General body settings*/
 body{
   margin: 0;
   padding: 0;
+}
+
+/*Assigning background picture*/
+.background {
   background-image: url('/public/images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -66,7 +70,7 @@ padding-right: 0;
 }
 
 /* making the selcted page orange */
-ul li.selected{
+aside ul li.selected{
   padding-right: 5vw;
   background: linear-gradient(to right, rgb(248, 148, 28) 65%, rgb(0, 0, 0, 0.0));
 }
@@ -113,11 +117,7 @@ aside a:hover {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
+/*Position the main content of the page*/
+.body {
+  margin: 18vh 0 0 15vw;
+}
