@@ -67,3 +67,18 @@ body {
   color: #fff;
   /* here i Set the text color to white for the paragraphs within the image items */
 }
+/*these functions are for the links to our social media*/
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+/*this function is to create good spacing between the icons */
+.social-links a {
+  margin: 0 5px;
+}
+
+/*i used this function to resize the images */
+.social-links img{
+  width: 25px;
+	height: 25px;
+}
