@@ -30,11 +30,34 @@ body{
   padding: 0;
 }
 
-/*Assigning background picture*/
-.background {
-  background-image: url('/public/images/background.jpg');
+/* this is to have a background picture and darken it */
+.bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg-genres{
+  background: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
+  z-index: -2;
+}
+
+.bg-GAME{
+  background: url("../images/bg-GAME.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -2;
+}
+
+.darken{
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
 }
 
 /*Styling the sidebar*/
