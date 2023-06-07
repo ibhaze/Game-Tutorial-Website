@@ -84,6 +84,7 @@ header{
   left: 0;
   width: 100vw;
   height: 18vh;
+  z-index: 1;
 }
 
 #headerimage{
@@ -132,7 +133,6 @@ aside{
   font-family: var(--Inriasans);
   line-height: 5vh;
   background: linear-gradient(to right, rgba(0, 0, 0) 65%, rgb(0, 0, 0, 0.0));
-  z-index: -1;
 }
 
 /*Moving the list to the left*/
@@ -366,7 +366,6 @@ main nav{
   position: relative;
   top: -4px;
   font-family: var(--InriaSans);
-  z-index: -1;
 }
 
 main nav ul{
