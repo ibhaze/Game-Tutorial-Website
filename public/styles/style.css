@@ -13,15 +13,22 @@
 
 /* Root */
 :root{
-  --black: #000;
-  --pricedow: 'pricedow';
-  --Inriasans: 'InriaSans';
+  --PriceDow: "pricedow";
+  --InriaSans: "InriaSans";
 }
 
 /* general styling */
 *{
   text-decoration: none;
   list-style: none;
+}
+
+.flex{
+  display: flex;
+}
+
+.margin-0{
+  margin: 0;
 }
 
 /*Giving the body the background picture*/
@@ -32,6 +39,34 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* This code is so the body starts under the header and next to the sidebar */
+.body{
+  margin: 18vh 0 0 15vw;
+}
+
+/* this is to have a background picture and darken it */
+.bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg-GAME{
+  background: url("../images/bg-GAME.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -2;
+}
+
+.darken{
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
 
 /*Styling the sidebar*/
 aside{
@@ -51,7 +86,7 @@ aside{
 
 /*Moving the list to the left*/
 aside>ul{
-  padding: 0vw;
+  padding: 0;
 }
 
 /*Making the colour of the text About Us white*/
@@ -113,10 +148,62 @@ aside a:hover {
   cursor: pointer;
 }
 
+/* Main body */
+main img.hero{
+  width: 100%;
+}
 
+/* Navigation underneath the hero */
+main nav{
+  width: 100%;
+  background-color: black;
+  position: relative;
+  top: -4px;
+  font-family: var(--InriaSans);
+}
 
+main nav ul{
+  margin: 0;
+  padding: 0;
+}
 
+main nav ul li{
+  padding: 1vh 3vw;
+}
 
+main nav ul li a{
+  color: white;
+  padding: 1vh 3vw;
+}
 
+ul li.selected{
+  background-color: orange;
+}
 
+/* Tutorials */
+main article{
+  width: 90%;
+  margin: 3vh auto;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
 
+main article img{
+  width: 200px;
+  padding-right: 1vw;
+}
+
+main article h2{
+  font-size: 2rem
+}
+
+main article h6{
+  font-size: 1rem
+}
+
+main article p{
+  margin: 10px 0 0 0 ;
+  font-size: 1.7em;
+}
