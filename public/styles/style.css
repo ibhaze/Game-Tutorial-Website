@@ -38,6 +38,7 @@ body{
   background-image: url('/public/images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: var(--Inriasans);
 }
 
 /* This code is so the body starts under the header and next to the sidebar */
@@ -387,7 +388,7 @@ nav ul li.selected{
 }
 
 /* Tutorials */
-main article{
+main article.tutorial{
   width: 90%;
   margin: 3vh auto;
   padding: 10px;
@@ -396,20 +397,20 @@ main article{
   border-radius: 10px;
 }
 
-main article img{
+main article.tutorial img{
   width: 200px;
   padding-right: 1vw;
 }
 
-main article h2{
+main article.tutorial h2{
   font-size: 2rem
 }
 
-main article h6{
+main article.tutorial h6{
   font-size: 1rem
 }
 
-main article p{
+main article.tutorial p{
   margin: 10px 0 0 0 ;
   font-size: 1.7em;
 }
@@ -421,6 +422,17 @@ main article p{
   padding: 1vh 3vw;
   background-color: rgb(0, 0, 0, 0.75);
   border-radius: 10px;
+}
+
+.orange-box{
+  padding: 1vh 3vw;
+  background-color: rgba(246, 149, 14, 0.75);
+  border: #000 2px solid;
+}
+
+main section.tutorial{
+  justify-content: space-between;
+  margin-right: 5vw;
 }
 
 main a{
