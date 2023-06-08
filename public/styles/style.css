@@ -74,7 +74,6 @@ body,.background{
 }
 
 .image-item img {
-  width: 200px;
   height: 200px;
   /* Here I Set the width and height for the images within the image items , without this the images would  be huge  */
 }
