@@ -38,18 +38,61 @@ display: flex;
 margin: 0;
 }
 
-/*Giving the body the background picture*/
+/*General body settings*/
 body{
-margin: 0;
-padding: 0;
-background-image: url('/public/images/background.jpg');
-background-repeat: no-repeat;
-background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
-/* This code is so the body starts under the header and next to the sidebar */
-.body{
-margin: 18vh 0 0 15vw;
+  /*Here ,I set the background  and image, and darken the background image  */
+body,.background{
+  background: rgba(0, 0, 0, 0.7) url(../images/backgroundaboutpage.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+/* Image container styling */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Here I Use a flexbox to horizontally center the image items in the container */
+}
+
+.image-item {
+  margin: 10px;
+  text-align: center;
+  /* here I Add a margin and align the content to the center in each image item */
+}
+
+.image-item img {
+  height: 200px;
+  /* Here I Set the width and height for the images within the image items , without this the images would  be huge  */
+}
+
+.image-item p {
+  color: #fff;
+  /* here i Set the text color to white for the paragraphs within the image items */
+}
+/*these functions are for the links to our social media*/
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+/*this function is to create good spacing between the icons */
+.social-links a {
+  margin: 0 5px;
+}
+
+/*i used this function to resize the images */
+.social-links img{
+  width: 25px;
+	height: 25px;
+}
+
+/*Position the main content of the page*/
+.body {
+  margin: 18vh 0 0 15vw;
 }
 
 /* this is to have a background picture and darken it */
@@ -67,6 +110,22 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
 z-index: -2;
+}
+
+.bg-genres{
+  background: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -2;
+}
+
+.bg-index{
+  background: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -2;
 }
 
 .bg-GAME{
@@ -101,42 +160,62 @@ margin-top: 1vw;
 margin-right: 7vw;
 }
 
-#headerlogo{
-top: 0;
-left: 0;
-max-width: 6vw;
-float: left;
-margin-left: 20px;
+/* HEADER */
+header{
+  position: fixed;
+  text-align: center;
+  background: linear-gradient(#000 70%, rgb(0,0,0,0.0));
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 18vh;
+  z-index: 1;
+}
 
+#headerimage{
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  max-width: 50vw;
+  margin-top: 1vw;
+  margin-right: 7vw;
+}
+
+#headerlogo{
+  top: 0;
+  left: 0;
+  max-width: 6vw;
+  float: left;
+  margin-left: 20px;
 }
 
 .buttonlogo{
-background-color: #00000000;
-opacity: 10;
+  background-color: #00000000;
+  opacity: 10;
 }
 
 #headerlogo1{
-margin-left: 0;
-top: 0;
-left: 0;
-max-width: 6vw;
-width: 100%;
+  margin-left: 0;
+  top: 0;
+  left: 0;
+  max-width: 6vw;
+  width: 100%;
 }
 
 /*Styling the sidebar*/
 aside{
-width: 16vw;
-height: 100vh;
-background-color: #000000;
-position: fixed;
-top: 0;
-left: 0;
-padding: 13vh 1vw;
-color: white;
-font-size: 24px;
-font-family: var(--Inriasans);
-line-height: 5vh;
-background: linear-gradient(to right, rgba(0, 0, 0) 65%, rgb(0, 0, 0, 0.0));
+  width: 16vw;
+  height: 100vh;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 13vh 1vw;
+  color: white;
+  font-size: 24px;
+  font-family: var(--InriaSans);
+  line-height: 5vh;
+  background: linear-gradient(to right, rgba(0, 0, 0) 65%, rgb(0, 0, 0, 0.0));
 }
 
 /*Moving the list to the left*/
@@ -179,10 +258,12 @@ background: linear-gradient(to right, rgb(248, 148, 28) 65%, rgb(0, 0, 0, 0.0));
 
 /*Styling the Search Bar*/
 .search-form {
-display: flex;
-align-items: center;
-justify-content: flex-end;
-padding: 16vh 0vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  top: 16vh;
+  right: 0;
 }
 
 /*White square text-input styling*/
@@ -429,66 +510,234 @@ section.grid a:hover{
 
 } */
 
+#mostpopulargrid{
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
 
+#fpsgrid{
+  grid-column: 5/7;
+  grid-row: 1/2;
+}
+
+#rpggrid{
+  grid-column: 8/10;
+  grid-row: 1/2;
+}
+
+#sportgrid{
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+#platformergrid{
+  grid-column: 5/7;
+  grid-row: 2/3;
+}
+
+#horrorgrid{
+  grid-column: 8/10;
+  grid-row: 2/3;
+}
+
+#racinggrid{
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+#adventuregrid{
+  grid-column: 5/7;
+  grid-row: 3/4;
+}
+
+#fightinggrid{
+  grid-column: 8/10;
+  grid-row: 3/4;
+}
+
+#puzzlegrid{
+  grid-column: 2/4;
+  grid-row: 4/5;
+}
+
+#strategygrid{
+  grid-column: 5/7;
+  grid-row: 4/5;
+}
+
+#actiongrid{
+  grid-column: 8/10;
+  grid-row: 4/5;
+
+}
+
+section.grid a{
+  background-color: #e56262;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+/* Genre pages */
+main.flex{
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 0 0 4vw;
+}
+
+.box {
+  height: 55vh;
+  width: 20vw;
+  background-color: rgb(0, 0, 0, 0.75);
+  border: 1px solid #000000;
+  border-radius: 20px;
+  margin: 5vh 2.5vw;
+}
+
+.gamepic {
+  height: 45vh;
+  width: 18vw;
+  margin: 1vh 1vw;
+  border-radius: 5px;
+}
+
+.gamename {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 2vh;
+  font-family: var(--Inriasans);
+}
 
 /* MAIN BODY CHOOSING TUTORIAL PAGE */
 main img.hero{
-width: 100%;
+  width: 100%;
 }
 
 /* Navigation underneath the hero */
-main nav{
-width: 100%;
-background-color: black;
-position: relative;
-top: -4px;
-font-family: var(--InriaSans);
+main>nav{
+  width: 100%;
+  background-color: black;
+  position: relative;
+  top: -4px;
+  font-family: var(--InriaSans);
 }
 
-main nav ul{
-margin: 0;
-padding: 0;
+main>nav ul{
+  margin: 0;
+  padding: 0;
 }
 
 main nav ul li{
-padding: 1vh 3vw;
+  padding: 1vh 3vw;
 }
 
-main nav ul li a{
-color: white;
-padding: 1vh 3vw;
+main>nav ul li a{
+  color: white;
+  padding: 1vh 3vw;
 }
 
 nav ul li.selected{
-background-color: orange;
+  background-color: orange;
 }
 
 /* Tutorials */
-main article{
-width: 90%;
-margin: 3vh auto;
-padding: 10px;
-color: white;
-background-color: rgba(0, 0, 0, 0.75);
-border-radius: 10px;
+main article.tutorial{
+  width: 90%;
+  margin: 3vh auto;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
 }
 
-main article img{
-width: 200px;
-padding-right: 1vw;
+main article.tutorial img{
+  width: 200px;
+  padding-right: 1vw;
 }
 
-main article h2{
-font-size: 2rem
+main article.tutorial h2{
+  font-size: 2rem
 }
 
-main article h6{
-font-size: 1rem
+main article.tutorial h6{
+  font-size: 1rem
 }
 
-main article p{
-margin: 10px 0 0 0 ;
-font-size: 1.7em;
+main article.tutorial p{
+  margin: 10px 0 0 0 ;
+  font-size: 1.7em;
+}
+
+/* 
+    Tutorial Page 
+*/
+.dark-box{
+  padding: 1vh 3vw;
+  background-color: rgb(0, 0, 0, 0.75);
+  border-radius: 10px;
+  position: relative;
+  top: -15px;
+}
+
+.orange-box{
+  padding: 1vh 3vw;
+  background-color: rgba(246, 149, 14, 0.75);
+  border: #000 2px solid;
+}
+
+main section.tutorial{
+  justify-content: space-between;
+  margin-right: 5vw;
+  margin-top: 15px;
+}
+
+main a{
+  color: #fff;
+  font-size: 1.5em;
+}
+
+main section.tutorial div div img{
+  width: 100px;
+}
+
+main section.tutorial div.flex div.flex{
+  color: white;
+  width: 100%;
+  align-items: center;
+  flex: 20%;
+}
+
+main section.tutorial div div.flex h6{
+  font-size: 1em;
+}
+
+main section.tutorial div.flex h2{
+  width: 100%;
+  font-size: 4rem;
+  text-align: center;
+  color: #F8941C;
+}
+
+main section.tutorial p{
+  color: white;
+  flex: 60%;
+}
+
+main section.tutorial iframe{
+  flex: 40%;
+}
+
+main section.tutorial nav{
+  width: 100%;
+  font-family: var(--InriaSans);
+  justify-content: space-between;
+  align-items: center;
+}
+
+main section.tutorial nav ul li{
+  border: white 1px solid;
 }
 
 /* FOOTER */
@@ -508,9 +757,9 @@ top: -5px;
 }
 
 footer a img{
-position: relative;
-top: 7px;
-height: 8vh;
-padding: 1vh;
-background-color: #FFA500;
+  position: relative;
+  top: 7px;
+  height: 8vh;
+  padding: 1vh;
+  background-color: #FFA500;
 }
