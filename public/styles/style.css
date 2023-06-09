@@ -95,6 +95,10 @@ body,.background{
   margin: 18vh 0 0 15vw;
 }
 
+.body-about-us {
+  margin: 18vh 0 0 0;
+}
+
 /* this is to have a background picture and darken it */
 .bg{
 position: fixed;
