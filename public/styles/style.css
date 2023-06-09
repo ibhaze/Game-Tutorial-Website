@@ -301,7 +301,7 @@ margin-top: 1vh;
 grid-column: 2/4;
 grid-row: 1/2;
 border: 10px solid black;
-background: url("../images/popular2.png");
+background: url("../images/popular.png");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
@@ -311,56 +311,100 @@ background-position: center center;
 #fpsgrid{
 grid-column: 5/7;
 grid-row: 1/2;
+background: url("../images/fps.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 }
 
 #rpggrid{
 grid-column: 8/10;
 grid-row: 1/2;
+background: url("../images/rpg.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 }
 
 #sportgrid{
 grid-column: 2/4;
 grid-row: 2/3;
+background: url("../images/sport.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 }
 
 #platformergrid{
 grid-column: 5/7;
 grid-row: 2/3;
+background: url("../images/platformer.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 }
 
 #horrorgrid{
 grid-column: 8/10;
 grid-row: 2/3;
+background: url("../images/horror.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 }
 
 #racinggrid{
 grid-column: 2/4;
 grid-row: 3/4;
+background: url("../images/racing.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 }
 
 #adventuregrid{
 grid-column: 5/7;
 grid-row: 3/4;
+background: url("../images/adventure.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 }
 
 #fightinggrid{
 grid-column: 8/10;
 grid-row: 3/4;
+background: url("../images/fighting.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 }
 
 #puzzlegrid{
 grid-column: 2/4;
 grid-row: 4/5;
+background: url("../images/puzzle.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 }
 
 #strategygrid{
 grid-column: 5/7;
 grid-row: 4/5;
+background: url("../images/strategy.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 }
 
 #actiongrid{
 grid-column: 8/10;
 grid-row: 4/5;
+background: url("../images/action.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 }
 
 
