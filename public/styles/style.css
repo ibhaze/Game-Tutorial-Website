@@ -93,6 +93,13 @@ body{
   background-position: center center;
   z-index: -2;
 }
+.bg-fifa{
+  background: url("../images/bg-fifa.jpg");/*gotten from --: https://wall.alphacoders.com/big.php?i=1257792*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -2;
+}
 
 .darken{
   background-color: rgba(0, 0, 0, 0.25);
