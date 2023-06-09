@@ -15,7 +15,7 @@ url('../fonts/InriaSans.woff2') format('woff2');
   font-family: 'metalmania';
   src: url("../fonts/metalmania-regular-webfont.woff") format('woff'),
   url('../fonts/metalmania-regular-webfont.woff2') format('woff2');
-  }
+}
 
 /* Root */
 :root{
@@ -44,52 +44,6 @@ body{
   padding: 0;
 }
 
-  /*Here ,I set the background  and image, and darken the background image  */
-body,.background{
-  background: rgba(0, 0, 0, 0.7) url(../images/backgroundaboutpage.jpg);
-  background-size: cover;
-  background-blend-mode: darken;
-}
-
-/* Image container styling */
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Here I Use a flexbox to horizontally center the image items in the container */
-}
-
-.image-item {
-  margin: 10px;
-  text-align: center;
-  /* here I Add a margin and align the content to the center in each image item */
-}
-
-.image-item img {
-  height: 200px;
-  /* Here I Set the width and height for the images within the image items , without this the images would  be huge  */
-}
-
-.image-item p {
-  color: #fff;
-  /* here i Set the text color to white for the paragraphs within the image items */
-}
-/*these functions are for the links to our social media*/
-.social-links {
-  display: flex;
-  justify-content: center;
-}
-/*this function is to create good spacing between the icons */
-.social-links a {
-  margin: 0 5px;
-}
-
-/*i used this function to resize the images */
-.social-links img{
-  width: 25px;
-	height: 25px;
-}
-
 /*Position the main content of the page*/
 .body {
   margin: 18vh 0 0 15vw;
@@ -101,19 +55,19 @@ body,.background{
 
 /* this is to have a background picture and darken it */
 .bg{
-position: fixed;
-top: 0;
-left: 0;
-width: 100vw;
-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 .bg-index{
-background: url('../images/background.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center center;
-z-index: -2;
+  background: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -2;
 }
 
 .bg-genres{
@@ -133,35 +87,16 @@ z-index: -2;
 }
 
 .bg-GAME{
-background: url("../images/bg-GAME.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center center;
-z-index: -2;
+  background: url("../images/bg-GAME.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -2;
 }
 
 .darken{
-background-color: rgba(0, 0, 0, 0.25);
-z-index: -1;
-}
-
-/* HEADER */
-header{
-text-align: center;
-background: linear-gradient(#000 40%, rgb(0,0,0,0.0));
-top: 0;
-left: 0;
-max-width: 100vw;
-height: 18vh;
-}
-
-#headerimage{
-margin: 0 auto;
-top: 0;
-left: 0;
-max-width: 50vw;
-margin-top: 1vw;
-margin-right: 7vw;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
 }
 
 /* HEADER */
@@ -224,42 +159,43 @@ aside{
 
 /*Moving the list to the left*/
 aside>ul{
-padding: 0;
+  padding: 0;
 }
 
 /*Making the colour of the text About Us white*/
 aside a{
-color: white;
-padding-right: 7vw;
+  color: white;
+  padding-right: 7vw;
 }
 
 /* removing the padding for bigger words */
 aside a.remove-padding{
-padding-right: 0;
+  padding-right: 0;
 }
 
 /* making the selcted page orange */
 aside ul li.selected{
-padding-right: 5vw;
-background: linear-gradient(to right, rgb(248, 148, 28) 65%, rgb(0, 0, 0, 0.0));
+  padding-right: 5vw;
+  background: linear-gradient(to right, rgb(248, 148, 28) 65%, rgb(0, 0, 0, 0.0));
 }
 
 /*Styling the About Us link*/
 aside>a{
-position: absolute;
-top: 85vh;
-left: 1vw;
-font-size: 40px;
-font-family: var(--PriceDow);
+  position: absolute;
+  top: 85vh;
+  left: 1vw;
+  font-size: 40px;
+  font-family: var(--PriceDow);
 }
 
 /* Styling for hovered link */
 aside a:hover {
-background-color: #F8941C; 
-color: #ffffff; 
-background: linear-gradient(to right, rgb(248, 148, 28) 65%, rgb(0, 0, 0, 0.0));
+  background-color: #F8941C; 
+  color: #ffffff; 
+  background: linear-gradient(to right, rgb(248, 148, 28) 65%, rgb(0, 0, 0, 0.0));
 }
 
+/* SEARCH BAR */
 /*Styling the Search Bar*/
 .search-form {
   display: flex;
@@ -272,59 +208,58 @@ background: linear-gradient(to right, rgb(248, 148, 28) 65%, rgb(0, 0, 0, 0.0));
 
 /*White square text-input styling*/
 .search-form input[type="text"] {
-padding: 0.5vw;
-font-size: 16px;
-border: 0.1vw solid #ccc;
-border-radius: 0;
+  padding: 0.5vw;
+  font-size: 16px;
+  border: 0.1vw solid #ccc;
+  border-radius: 0;
 }
 
 /*Orange square submit button designing*/
 .search-form button {
-padding: 2.5vh 2vw;
-background-color: #f8941c;
-color: #fff;
-border: none;
-border-radius: 0;
-cursor: pointer;
+  padding: 2.5vh 2vw;
+  background-color: #f8941c;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 /* MAIN BODY INDEX PAGE */
 /* this is for search bar */
 .searchwrap{
-margin-top: -5vh;
-max-width: 100vw; 
+  max-width: 100vw; 
 }
 
 .search{
-display: flex;
-width: 40%;
-margin: 0 auto;
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
 /* position: relative; */
 }
 
 .searchterm{
-width: 100%;
-border: 3px solid #000000;
-border-right: none;
-padding: 5px;
-height: 20px;
-outline: none;
-color: #000000;
+  width: 100%;
+  border: 3px solid #000000;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  outline: none;
+  color: #000000;
 }
 
 .searchterm:focus{
-color: #000000;
+  color:  00000;
 }
 
 .searchbutton{
-width: 80px;
-height: 36px;
-border: 1px solid #000000;
-background: #F8941C;
-text-align: center;
-color: #fff;
-cursor: pointer;
-font-size: 20px;
+  width: 80px;
+  height: 36px;
+  border: 1px solid #000000;
+  background: #F8941C;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 /* this is for box welcoming user */
@@ -508,13 +443,61 @@ section.grid a:hover{
   background-color: #ffffff;
 }
 
+/* ABOUT US */
+/*Here ,I set the background  and image, and darken the background image  */
+body,.background{
+  background: rgba(0, 0, 0, 0.7) url(../images/backgroundaboutpage.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+/* Image container styling */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Here I Use a flexbox to horizontally center the image items in the container */
+}
+
+.image-item {
+  margin: 10px;
+  text-align: center;
+  /* here I Add a margin and align the content to the center in each image item */
+}
+
+.image-item img {
+  height: 200px;
+  /* Here I Set the width and height for the images within the image items , without this the images would  be huge  */
+}
+
+.image-item p {
+  color: #fff;
+  /* here i Set the text color to white for the paragraphs within the image items */
+}
+/*these functions are for the links to our social media*/
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+/*this function is to create good spacing between the icons */
+.social-links a {
+  margin: 0 5px;
+}
+
+/*i used this function to resize the images */
+.social-links img{
+  width: 25px;
+	height: 25px;
+}
+
 /* MAIN BODY SITEMAP PAGE */
 
 /* #sitemapheader{
 
 } */
 
-/* Genre pages */
+
+/* GENRE PAGES */
 main.flex{
   flex-wrap: wrap;
   justify-content: flex-start;
