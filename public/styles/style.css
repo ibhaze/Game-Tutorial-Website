@@ -35,9 +35,9 @@
 body{
   margin: 0;
   padding: 0;
-  
-  /*Here ,I set the background  and image, and darken the background image  */
 }
+
+  /*Here ,I set the background  and image, and darken the background image  */
 body,.background{
   background: rgba(0, 0, 0, 0.7) url(../images/backgroundaboutpage.jpg);
   background-size: cover;
