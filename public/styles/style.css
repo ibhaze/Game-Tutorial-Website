@@ -55,6 +55,8 @@ body{
   background: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
+  z-index: -2;
 }
 
 .bg-index{
@@ -76,11 +78,6 @@ body{
 .darken{
   background-color: rgba(0, 0, 0, 0.25);
   z-index: -1;
-}
-
-/* This code is so the body starts under the header and next to the sidebar */
-.body{
-  margin: 18vh 0 0 15vw;
 }
 
 /* HEADER */
@@ -136,7 +133,7 @@ aside{
   padding: 13vh 1vw;
   color: white;
   font-size: 24px;
-  font-family: var(--Inriasans);
+  font-family: var(--InriaSans);
   line-height: 5vh;
   background: linear-gradient(to right, rgba(0, 0, 0) 65%, rgb(0, 0, 0, 0.0));
 }
@@ -365,7 +362,7 @@ section.grid a{
 /* Genre pages */
 main.flex{
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   padding: 0 0 0 4vw;
 }
 
@@ -375,7 +372,7 @@ main.flex{
   background-color: rgb(0, 0, 0, 0.75);
   border: 1px solid #000000;
   border-radius: 20px;
-  margin: 5vh 1vw;
+  margin: 5vh 2.5vw;
 }
 
 .gamepic {
