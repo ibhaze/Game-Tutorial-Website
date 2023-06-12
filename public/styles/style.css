@@ -568,6 +568,28 @@ nav ul li.selected{
   background-color: orange;
 }
 
+.subsection {
+  display: flex; /* I used flexbox to create a flexible container */
+  flex-direction: column; /* here i arrange the content in a column layout */
+  align-items: center; /* this is used to center the content horizontally */
+  text-align: left; /* Here I align the text within the container to the left*/
+}
+
+.subsection .intro-text {
+  margin-bottom: 20px; /* this adds 20 pixels of margin at the bottom */
+}
+
+.subsection strong {
+  font-size: 20px; /* here I set the font size to 20 pixels */
+  font-weight: bold;/*here I make the text bold*/
+  color: #FFA500; /* this is an orange text color for the title */
+}
+
+.subsection p {
+  font-size: 16px; /*Here I Set the font size to 16 pixels */ 
+  margin-bottom: 10px; /* Here I Add 10 pixels of margin at the bottom */
+}
+
 
 /* Tutorials */
 main article.tutorial{
