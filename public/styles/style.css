@@ -573,6 +573,7 @@ nav ul li.selected{
   flex-direction: column; /* here i arrange the content in a column layout */
   align-items: center; /* this is used to center the content horizontally */
   text-align: left; /* Here I align the text within the container to the left*/
+  
 }
 
 .subsection .intro-text {
