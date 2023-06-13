@@ -584,13 +584,18 @@ nav ul li.selected{
   font-size: 20px; /* here I set the font size to 20 pixels */
   font-weight: bold;/*here I make the text bold*/
   color: #FFA500; /* this is an orange text color for the title */
+  display: block;/*this causes text to start on a new line under the image.*/
 }
 
 .subsection p {
   font-size: 16px; /*Here I Set the font size to 16 pixels */ 
   margin-bottom: 10px; /* Here I Add 10 pixels of margin at the bottom */
+ 
 }
-
+.subsection .player-image {
+  width: 800px; 
+  margin-bottom: 20px;/*this is to create space under the image so that it wont be to close to the text above it*/
+}
 
 
 /* Tutorials */
