@@ -87,8 +87,8 @@ body{
   z-index: -2;
 }
 
-.bg-GAME{
-  background: url("../images/bg-GAME.jpg");
+.bg-csgo{
+  background: url("../images/bg-csgo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -96,6 +96,30 @@ body{
 }
 .bg-fifa{
   background: url("../images/bg-fifa.jpg");/*gotten from --: https://wall.alphacoders.com/big.php?i=1257792*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -2;
+}
+
+.bg-gta{
+  background: url("../images/bg-gta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -2;
+}
+
+.bg-overwatch2{
+  background: url("../images/bg-overwatch2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -2;
+}
+
+.bg-hollow-knight{
+  background: url("../images/bg-hollow-knight.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -556,12 +580,12 @@ main>nav ul{
 }
 
 main nav ul li{
-  padding: 1vh 3vw;
+  padding: 1vh 2vw;
 }
 
 main>nav ul li a{
   color: white;
-  padding: 1vh 3vw;
+  padding: 1vh 2.9vw;
 }
 
 nav ul li.selected{
@@ -596,6 +620,11 @@ nav ul li.selected{
   width: 800px; 
   margin-bottom: 20px;/*this is to create space under the image so that it wont be to close to the text above it*/
 }
+.subsection iframe{
+  height: 300px;
+  width: 500px;
+  flex: auto !important;
+}
 
 
 /* Tutorials */
@@ -623,7 +652,7 @@ main article.tutorial h6{
 
 main article.tutorial p{
   margin: 10px 0 0 0 ;
-  font-size: 1.7em;
+  font-size: 1.3em;
 }
 
 /* 
