@@ -503,8 +503,10 @@ body,.background{
 }
 
 .image-item p {
-  color: #fff;
-  /* here i Set the text color to white for the paragraphs within the image items */
+  color: #fff;/* here i Set the text color to white for the paragraphs within the image items */
+  height: 200px;
+  /* Here I set the height of the paragraphs to 200px to match the image height */
+  overflow: hidden;
 }
 /*these functions are for the links to our social media*/
 .social-links {
