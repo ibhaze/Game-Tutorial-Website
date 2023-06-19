@@ -527,7 +527,7 @@ body,.background{
 .gridsitemap{
   display: grid;
   grid-template-columns: repeat(15,1fr);
-  grid-template-rows: repeat(24,minmax(150px,auto));
+  grid-template-rows: repeat(10,minmax(150px,auto));
   }
 
 .gridsitemap article h2 {
@@ -535,7 +535,19 @@ body,.background{
 }
 
 .gridsitemap article h3 {
-  font-size: 1.7em;
+  font-size: 1.8em;
+}
+
+.gridsitemap article a {
+  font-size: 1.2em;
+}
+
+.gridsitemap article p {
+  font-size: 1.5em;
+}
+
+.gridsitemap a:hover {
+  color: #F8941C;
 }
 
 #sitemapheader{
@@ -562,19 +574,32 @@ main section .grid a,h2,ul,li,h3{
   grid-row: 2/3;
 }
 
-#popularsitemap{
-  grid-column: 1/5;
-  grid-row: 3/8;
+#mostpopularsitemap{
+  grid-column: 5/8;
+  grid-row: 1/2;
   margin-left: 1vw;
   margin-right: 1vw;
 }
 
 #fpssitemap{
-  grid-column: 5/10;
+  grid-column: 2/6;
   grid-row: 3/8;
   margin-left: 1vw;
   margin-right: 1vw;
 }
+
+#fpssitemapow{
+  grid-column: 6/10;
+  grid-row: 3/8;
+  margin-top: 7vh;
+  margin-left: 3vw;
+}
+
+#fpssitemapow p{
+  font-size: 1.6em;
+  
+}
+
 
 #rpgsitemap{
   grid-column: 10/15;
@@ -584,70 +609,18 @@ main section .grid a,h2,ul,li,h3{
 }
 
 #sportsitemap{
-  grid-column: 1/5;
+  grid-column: 2/7;
   grid-row: 8/13;
   margin-left: 1vw;
   margin-right: 1vw;
 }
 
 #platformersitemap{
-  grid-column: 5/10;
+  grid-column: 7/11;
   grid-row: 8/13;
   margin-left: 1vw;
   margin-right: 1vw;
 }
-
-#horrorsitemap{
-  grid-column: 10/15;
-  grid-row: 8/13;
-  margin-left: 1vw;
-  margin-right: 1vw;
-}
-
-#racingsitemap{
-  grid-column: 1/5;
-  grid-row: 13/18;
-  margin-left: 1vw;
-  margin-right: 1vw;
-}
-
-#adventuresitemap{
-  grid-column: 5/10;
-  grid-row: 13/18;
-  margin-left: 1vw;
-  margin-right: 1vw;
-}
-
-#fightingsitemap{
-  grid-column: 10/15;
-  grid-row: 13/18;
-  margin-left: 1vw;
-  margin-right: 1vw;
-}
-
-#puzzlesitemap{
-  grid-column: 1/5;
-  grid-row: 18/23;
-  margin-left: 1vw;
-  margin-right: 1vw;
-}
-
-#strategysitemap{
-  grid-column: 5/10;
-  grid-row: 18/23;
-  margin-left: 1vw;
-  margin-right: 1vw;
-}
-
-#actionsitemap{
-  grid-column: 10/15;
-  grid-row: 18/23;
-  margin-left: 1vw;
-  margin-right: 1vw;
-}
-
-
-
 
 
 /* GENRE PAGES */
